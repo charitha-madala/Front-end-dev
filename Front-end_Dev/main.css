@@ -1,0 +1,226 @@
+body {
+  
+  font-family: Arial, sans-serif;
+  background-color: rgb(90, 104, 109);
+  
+  
+  
+}
+
+h1 {
+  
+  margin-left: 40%;
+	background-size: cover;
+  background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 39px;
+	line-height: 0.9;
+  margin: -115px 540px;
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(65, 34, 34);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+h1:hover{
+  color:burlywood;
+}
+
+
+.box {
+  background-color: rgb(71,71,71);
+	background-size: cover;
+	color: transparent;
+  width:7%;
+  margin: 318px 1330px;
+  padding: 13px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+  
+}
+
+.box2 {
+  background-color: rgb(71,71,71);
+	background-size: cover;
+	color: transparent;
+  width:7%;
+  margin: 100px 1100px;
+  margin-top: -412.5px;
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.box1 {
+  background-color: rgb(71,71,71);
+	background-size: cover;
+	color: transparent;
+  width:14%;
+  margin: 20px auto;
+  padding: 22px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+  
+}
+
+.button {
+  font-size: 1em;
+  padding: 5px;
+  color: #fff;
+  border: 2px solid #0c0c0c;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin: 20px 0px;
+}
+.button:hover {
+  background:white;
+  color: black;
+}
+
+.button1 {
+  font-size: 1em;
+  padding: 5px;
+  width: 20%;
+  color: #fff;
+  border: 2px solid rgb(12, 12, 12);
+  border-radius: 30px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin: 20px 0px;
+  text-align: center;
+}
+.button1:hover {
+  background:#73747298;
+  color: #fff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgba(147, 147, 160, 0.877);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: rgb(15, 14, 14);
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #ff0707;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.column {
+  float: left;
+  width: 47%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h3 a {
+  color: rgb(0, 0, 0);
+  font-size:18px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  text-align: justify;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  margin: 25px 10px;
+}
+
+a.effect-box:after,
+a.effect-box:before {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+	
+}
+
+a.effect-box:before {
+  border-left: 3px solid;
+  margin-left: 3px;
+  padding: 4px;
+  height: 49px;
+  transform: scale(1,0);
+}
+
+a.effect-box:before {
+  border-right: 3px solid;
+  padding: 4px;
+  height: 49px;
+  transform: scale(1,0);
+}
+
+a.effect-box:after {
+  
+  border-top: 1px solid;
+  transform: scale(0,1);
+  margin-left: 9px;
+}
+
+a.effect-box:hover:after,
+a.effect-box:hover:before {
+  opacity: 1;
+	transform: scale(1);
+}
+
+
+
+
